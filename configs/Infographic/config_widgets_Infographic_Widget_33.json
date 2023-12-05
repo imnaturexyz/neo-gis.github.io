@@ -1,0 +1,174 @@
+{
+  "layout": {
+    "definition": [
+      {
+        "type": "column",
+        "isClosable": true,
+        "reorderEnabled": true,
+        "title": "",
+        "width": 100,
+        "content": [
+          {
+            "type": "stack",
+            "isClosable": true,
+            "reorderEnabled": true,
+            "title": "",
+            "activeItemIndex": 0,
+            "height": 27.97150164413592,
+            "content": [
+              {
+                "type": "component",
+                "isClosable": true,
+                "componentName": "jimu grid",
+                "componentState": {
+                  "id": "3020628119060793-1"
+                },
+                "reorderEnabled": true,
+                "title": "jimu grid",
+                "id": "3020628119060793-1"
+              }
+            ]
+          },
+          {
+            "type": "stack",
+            "isClosable": true,
+            "reorderEnabled": true,
+            "title": "",
+            "activeItemIndex": 0,
+            "height": 72.0284983558641,
+            "content": [
+              {
+                "type": "component",
+                "isClosable": true,
+                "componentName": "jimu grid",
+                "componentState": {
+                  "id": "3020628119060793-2"
+                },
+                "reorderEnabled": true,
+                "title": "jimu grid",
+                "id": "3020628119060793-2"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "dijits": [
+    {
+      "id": "3020628119060793-1",
+      "type": "text",
+      "visible": true,
+      "config": {
+        "background": {
+          "backgroundColor": "#FFF",
+          "alignment": {
+            "horizontal": "center",
+            "vertical": "middle"
+          },
+          "link": ""
+        },
+        "font": {
+          "font": {
+            "fontFamily": "Arial",
+            "bold": true,
+            "italic": false,
+            "underline": false
+          },
+          "fontSize": 16,
+          "textColor": "#282828"
+        },
+        "text": "JUMLAH TERMINAL BERDASARKAN TIPE"
+      }
+    },
+    {
+      "id": "3020628119060793-2",
+      "type": "chart",
+      "visible": true,
+      "config": {
+        "data": {
+          "mode": "count",
+          "type": "pie",
+          "clusterField": "tipe",
+          "sortOrder": {
+            "isAsc": true,
+            "isLabelAxis": "on"
+          },
+          "maxLabels": 100
+        },
+        "display": {
+          "backgroundColor": "#ffffff",
+          "seriesStyle": {
+            "type": "series",
+            "styles": [
+              {
+                "style": {
+                  "color": [
+                    "#eb7b3a",
+                    "#febf29",
+                    "#72ad4c",
+                    "#9c4618",
+                    "#987214",
+                    "44682e"
+                  ]
+                },
+                "name": "pie~not-field",
+                "label": "pie~not-field"
+              }
+            ]
+          },
+          "legend": {
+            "textStyle": {
+              "color": "#000000",
+              "fontSize": 12
+            },
+            "show": false
+          },
+          "dataLabel": {
+            "textStyle": {
+              "color": "#000000",
+              "fontSize": 12
+            },
+            "show": true
+          },
+          "innerRadius": 45
+        }
+      }
+    },
+    {
+      "id": "3020628119060793-3",
+      "type": "text",
+      "visible": false,
+      "config": {
+        "background": {
+          "backgroundColor": "#FFF",
+          "alignment": {
+            "horizontal": "center",
+            "vertical": "top"
+          },
+          "link": ""
+        },
+        "font": {
+          "font": {
+            "fontFamily": "Arial",
+            "bold": false,
+            "italic": false,
+            "underline": false
+          },
+          "fontSize": 12,
+          "textColor": "#282828"
+        },
+        "text": "Description: additional information about this infographic."
+      }
+    }
+  ],
+  "name": "donut",
+  "wid": "3020628119060793",
+  "dataSource": {
+    "dataSourceType": "DATA_SOURCE_FEATURE_LAYER_FROM_MAP",
+    "name": "Terminal",
+    "layerId": "19e0076d3a9b4411a64318a8b5be77da",
+    "useSelection": true,
+    "filterByExtent": false
+  }
+}
